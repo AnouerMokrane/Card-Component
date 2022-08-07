@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Lexend Deca', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1 {
+    font-family: 'Big Shoulders Display', cursive;
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    border-radius: 15px; 
+    overflow: hidden;
+    background-color: white;
+}
+.container .box {
+    padding: 53px;
+    min-height: 505px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+.container > :first-child {
+    background-color:  hsl(31, 77%, 52%);
+}
+.container > :nth-child(2) {
+    background-color:  hsl(184, 100%, 22%);
+}
+.container > :last-child {
+    background-color:  hsl(179, 100%, 13%);
+}
+.container .box .icon{
+    margin-bottom: 30px;
+}
+.container .box h1 {
+    color:  hsl(0, 0%, 95%);
+    font-size: 40px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+.container .box p {
+    margin-bottom: 100px;
+    line-height: 1.6;
+    font-size: 15px;
+    color: hsla(0, 0%, 100%, 0.75
+    );
+}
+.container .box button{
+    background-color:  hsl(0, 0%, 95%);
+    padding: 15px 30px;
+    border-radius: 25px;
+    border: none;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.btn-one {
+    color: hsl(31, 77%, 52%);
+}
+.btn-two {
+    color: hsl(184, 100%, 22%);
+}
+.btn-three {
+    color: hsl(179, 100%, 13%);
+}
+.box button:hover {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+}
